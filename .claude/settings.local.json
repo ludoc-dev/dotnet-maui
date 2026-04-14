@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet:*)",
+      "Read(//Users/lucascardoso/.claude/skills/web2md/**)",
+      "Bash(bun run:*)",
+      "Bash(/Library/Frameworks/Python.framework/Versions/3.13/bin/notebooklm-mcp:*)",
+      "Bash(jq '.mcpServers |= . + {\"notebooklm-mcp\": {\"type\": \"stdio\", \"command\": \"/Library/Frameworks/Python.framework/Versions/3.13/bin/notebooklm-mcp\", \"args\": [], \"env\": {}}, \"workspace-developer\": {\"type\": \"http\", \"url\": \"https://workspace-developer.goog/mcp\"}}')"
+    ]
+  }
+}
