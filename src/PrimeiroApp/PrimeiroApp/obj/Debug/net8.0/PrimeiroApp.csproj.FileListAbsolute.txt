@@ -1,0 +1,14 @@
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/bin/Debug/net8.0/PrimeiroApp.deps.json
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/bin/Debug/net8.0/PrimeiroApp.dll
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/bin/Debug/net8.0/PrimeiroApp.pdb
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.csproj.AssemblyReference.cache
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.AssemblyInfoInputs.cache
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.AssemblyInfo.cs
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.csproj.CoreCompileInputs.cache
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.sourcelink.json
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/XamlC.stamp
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.dll
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/refint/PrimeiroApp.dll
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/PrimeiroApp.pdb
+/Users/lucascardoso/dotnet-maui/src/PrimeiroApp/PrimeiroApp/obj/Debug/net8.0/ref/PrimeiroApp.dll

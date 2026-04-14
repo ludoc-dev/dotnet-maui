@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.ProfilePage"
+             Title="Perfil">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*" Padding="20">
+            <!-- Header -->
+            <VerticalStackLayout Grid.Row="0" Spacing="15" Padding="0,0,0,20">
+                <Label Text="👤 Perfil do Usuário"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+
+                <Frame BackgroundColor="#007AFF" Padding="15" CornerRadius="50" HorizontalOptions="Center">
+                    <Label Text="📷"
+                           FontSize="40"
+                           HorizontalTextAlignment="Center" />
+                </Frame>
+            </VerticalStackLayout>
+
+            <!-- Formulário -->
+            <Frame Grid.Row="1" BackgroundColor="#F0F0F0" Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Informações Pessoais"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                    <!-- Nome -->
+                    <Frame BackgroundColor="White" Padding="10">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Nome Completo"
+                                   FontSize="12"
+                                   TextColor="Gray" />
+                            <Entry x:Name="EntryName"
+                                   Placeholder="Digite seu nome"
+                                   Text="" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Email -->
+                    <Frame BackgroundColor="White" Padding="10">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="E-mail"
+                                   FontSize="12"
+                                   TextColor="Gray" />
+                            <Entry x:Name="EntryEmail"
+                                   Placeholder="seu@email.com"
+                                   Keyboard="Email"
+                                   Text="" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Telefone -->
+                    <Frame BackgroundColor="White" Padding="10">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Telefone"
+                                   FontSize="12"
+                                   TextColor="Gray" />
+                            <Entry x:Name="EntryPhone"
+                                   Placeholder="(00) 00000-0000"
+                                   Keyboard="Telephone"
+                                   Text="" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Bio -->
+                    <Frame BackgroundColor="White" Padding="10">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Biografia"
+                                   FontSize="12"
+                                   TextColor="Gray" />
+                            <Editor x:Name="EditorBio"
+                                    Placeholder="Conte um pouco sobre você..."
+                                    HeightRequest="100"
+                                    AutoSize="TextChanges" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Botões -->
+                    <Button Text="💾 Salvar Perfil"
+                            Clicked="OnSaveProfileClicked"
+                            BackgroundColor="#34C759"
+                            TextColor="White"
+                            HeightRequest="50"
+                            CornerRadius="8" />
+
+                    <Button Text="🔄 Limpar"
+                            Clicked="OnClearClicked"
+                            BackgroundColor="#FF3B30"
+                            TextColor="White"
+                            HeightRequest="50"
+                            CornerRadius="8" />
+
+                    <!-- Status -->
+                    <Label x:Name="LabelStatus"
+                           Text="Preencha os campos acima"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Gray"
+                           FontSize="12" />
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

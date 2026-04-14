@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PrimeiroApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PrimeiroApp"
+    Title="Primeiro App">
+
+    <TabBar>
+        <ShellContent
+            Title="Início"
+            Icon="home.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Perfil"
+            Icon="user.png"
+            ContentTemplate="{DataTemplate local:ProfilePage}"
+            Route="ProfilePage" />
+
+        <ShellContent
+            Title="Configurações"
+            Icon="settings.png"
+            ContentTemplate="{DataTemplate local:SettingsPage}"
+            Route="SettingsPage" />
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.MainPage"
+             Title="Início">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20">
+        <!-- Header -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Padding="0,0,0,20">
+            <Label Text="Primeiro App .NET MAUI"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Bem-vindo ao aplicativo!"
+                   FontSize="16"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+
+        <!-- Menu Principal -->
+        <Frame Grid.Row="1" BackgroundColor="#F0F0F0" Padding="15" Margin="0,0,0,20">
+            <VerticalStackLayout Spacing="15">
+                <Label Text="Menu Principal"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+
+                <Button Text="📱 Ver Telas"
+                        Clicked="OnViewScreensClicked"
+                        BackgroundColor="#007AFF"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="8" />
+
+                <Button Text="👤 Ir para Perfil"
+                        Clicked="OnProfileClicked"
+                        BackgroundColor="#34C759"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="8" />
+
+                <Button Text="⚙️ Configurações"
+                        Clicked="OnSettingsClicked"
+                        BackgroundColor="#5856D6"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="8" />
+
+                <Button Text="ℹ️ Sobre"
+                        Clicked="OnAboutClicked"
+                        BackgroundColor="#8E8E93"
+                        TextColor="White"
+                        HeightRequest="50"
+                        CornerRadius="8" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Informações -->
+        <ScrollView Grid.Row="2">
+            <VerticalStackLayout Spacing="15" Padding="0,20,0,0">
+                <Frame BackgroundColor="#E8F4FD" Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="📚 Curso Programação Para Dispositivos Móveis"
+                               FontAttributes="Bold"
+                               FontSize="16"
+                               TextColor="Black" />
+                        <Label Text="Professor: Rafael Soares de Almeida"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="1º Semestre 2026"
+                               FontSize="14"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#FFF4E8" Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="🎯 Objetivos da Aula (14/04/2026)"
+                               FontAttributes="Bold"
+                               FontSize="16"
+                               TextColor="Black" />
+                        <Label Text="• Desenvolver interfaces móveis"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="• Implementar telas com XAML"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="• Aplicar design patterns"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="• Criar navegação funcional"
+                               FontSize="14"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#E8F8E8" Padding="15">
+                    <VerticalStackLayout>
+                        <Label Text="✅ Funcionalidades Implementadas"
+                               FontAttributes="Bold"
+                               FontSize="16"
+                               TextColor="Black" />
+                        <Label Text="✓ 3 telas principais (Início, Perfil, Configurações)"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="✓ Navegação por abas"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="✓ Design responsivo"
+                               FontSize="14"
+                               TextColor="Gray" />
+                        <Label Text="✓ Interface intuitiva"
+                               FontSize="14"
+                               TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroApp.SettingsPage"
+             Title="Configurações">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <!-- Header -->
+            <Label Text="⚙️ Configurações"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" />
+
+            <!-- Preferências -->
+            <Frame BackgroundColor="#F0F0F0" Padding="15">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Preferências do Aplicativo"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                    <!-- Notificações -->
+                    <Frame BackgroundColor="White" Padding="15">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="🔔"
+                                   FontSize="24" />
+                            <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5">
+                                <Label Text="Notificações"
+                                       FontAttributes="Bold"
+                                       TextColor="Black" />
+                                <Label Text="Receber alertas e atualizações"
+                                       FontSize="12"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            <Switch x:Name="SwitchNotifications"
+                                    IsToggled="true"
+                                    HorizontalOptions="End" />
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <!-- Modo Escuro -->
+                    <Frame BackgroundColor="White" Padding="15">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="🌙"
+                                   FontSize="24" />
+                            <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5">
+                                <Label Text="Modo Escuro"
+                                       FontAttributes="Bold"
+                                       TextColor="Black" />
+                                <Label Text="Tema escuro para interface"
+                                       FontSize="12"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            <Switch x:Name="SwitchDarkMode"
+                                    IsToggled="false"
+                                    HorizontalOptions="End" />
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <!-- Som -->
+                    <Frame BackgroundColor="White" Padding="15">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="🔊"
+                                   FontSize="24" />
+                            <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5">
+                                <Label Text="Sons"
+                                       FontAttributes="Bold"
+                                       TextColor="Black" />
+                                <Label Text="Efeitos sonoros do aplicativo"
+                                       FontSize="12"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            <Switch x:Name="SwitchSound"
+                                    IsToggled="true"
+                                    HorizontalOptions="End" />
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <!-- Vibração -->
+                    <Frame BackgroundColor="White" Padding="15">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="📳"
+                                   FontSize="24" />
+                            <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5">
+                                <Label Text="Vibração"
+                                       FontAttributes="Bold"
+                                       TextColor="Black" />
+                                <Label Text="Feedback háptico nas ações"
+                                       FontSize="12"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            <Switch x:Name="SwitchVibration"
+                                    IsToggled="true"
+                                    HorizontalOptions="End" />
+                        </HorizontalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Informações -->
+            <Frame BackgroundColor="#E8F4FD" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="ℹ️ Informações"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="Black" />
+
+                    <Label Text="Versão: 1.0.0"
+                           FontSize="14"
+                           TextColor="Gray" />
+
+                    <Label Text="Plataforma: .NET MAUI"
+                           FontSize="14"
+                           TextColor="Gray" />
+
+                    <Label Text="Desenvolvido para: PDM 2026"
+                           FontSize="14"
+                           TextColor="Gray" />
+
+                    <Button Text="📄 Ver Termos de Uso"
+                            Clicked="OnTermsClicked"
+                            BackgroundColor="#007AFF"
+                            TextColor="White"
+                            CornerRadius="8" />
+
+                    <Button Text="🔒 Política de Privacidade"
+                            Clicked="OnPrivacyClicked"
+                            BackgroundColor="#007AFF"
+                            TextColor="White"
+                            CornerRadius="8" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Botão Reset -->
+            <Button Text="🔄 Restaurar Padrões"
+                    Clicked="OnResetClicked"
+                    BackgroundColor="#FF3B30"
+                    TextColor="White"
+                    HeightRequest="50"
+                    CornerRadius="8" />
+
+            <!-- Status -->
+            <Label x:Name="LabelSettingsStatus"
+                   Text="Configurações salvas automaticamente"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Gray"
+                   FontSize="12" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
